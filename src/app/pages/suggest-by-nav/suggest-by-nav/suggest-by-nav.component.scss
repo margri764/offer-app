@@ -1,0 +1,80 @@
+.carousel-container {
+    position: relative;
+  }
+  
+.custom-prev-arrow,
+.custom-next-arrow {
+  position: absolute;
+  top: 50%;
+  border: 1px solid gray;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  z-index: 99;
+}
+
+.custom-prev-arrow {
+  background-image: url('../../../../assets/left-arrow.png');
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  left: 10px;
+}
+
+.custom-next-arrow {
+  background-image: url('../../../../assets/right-arrow.png');
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  right: 10px;
+}
+
+.carousel {
+  max-width: 100%; /* Ajusta el ancho máximo del carousel según tus necesidades */
+  margin: 0 auto; /* Centra el carousel horizontalmente en la página */
+}
+
+.slide img{
+  max-width: 90%;
+  height: auto;
+}
+
+
+ //Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 800px) {
+  
+  .slide img{
+    max-width: 50%;
+    height: auto;
+  }
+  
+    
+  }
+  
+  //Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 800px) {
+  
+  
+    }
+  
+    
+  //Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 1200px) {
+  
+
+  
+  }
+  
+  //Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 1400px) {
+
+  
+    
+  }
+  
+
+
+  

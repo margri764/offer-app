@@ -1,0 +1,83 @@
+.frame{
+    width: 80%;
+    background-color: white;
+  }
+
+  .feint{
+    font-family: "poppins-ligth";
+    font-size: 4vw;
+    color: #FF6F91;
+
+}
+.devs{
+    font-family: "poppins-ligth";
+    font-size: 1.3em;
+}
+
+.copyrigth #feint{
+    font-family: "poppins-light";
+    font-size: 2vw;
+    color: #FF6F91;
+
+}
+.copyrigth{
+    margin-top: 30px;
+}
+
+.copyrigth #devs{
+    font-family: "poppins-ligth";
+    font-size: 2vw;
+}
+
+img{
+  width: 20%;
+}
+
+  
+ //Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 800px) {
+  
+  .frame{
+    width: 100%;
+    background-color: white;
+  }
+
+  img{
+    width: 40%;
+  }
+  
+   
+    
+ }
+ 
+ //Extra small devices (phones, 600px and down) */
+ @media only screen and (min-width: 800px) {
+ 
+ 
+  
+ 
+   }
+ 
+   
+ //Extra small devices (phones, 600px and down) */
+ @media only screen and (min-width: 1200px) {
+ 
+   .frame{
+     width: 93%;
+   }
+   
+ 
+ }
+ 
+ //Extra small devices (phones, 600px and down) */
+ @media only screen and (min-width: 1400px) {
+
+   .frame{
+     width: 80%;
+   }
+   
+  
+ 
+   
+ }
+ 

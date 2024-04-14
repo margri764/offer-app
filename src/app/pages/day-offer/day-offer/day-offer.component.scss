@@ -1,0 +1,34 @@
+.carousel-container {
+    position: relative;
+  }
+  
+  .custom-prev-arrow,
+  .custom-next-arrow {
+    position: absolute;
+    top: 50%;
+    border: 1px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    z-index: 99;
+  }
+  
+  .custom-prev-arrow {
+    background-image: url('../../../../assets/left-arrow.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    left: 10px;
+  }
+  
+  .custom-next-arrow {
+    background-image: url('../../../../assets/right-arrow.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    right: 10px;
+  }
+  

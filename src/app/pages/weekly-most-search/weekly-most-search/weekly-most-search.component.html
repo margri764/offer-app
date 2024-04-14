@@ -1,0 +1,27 @@
+<span class="font" style="margin-left: 23px; font-size: 1.2em; font-weight: bold; "> Mas buscados de la semana </span> &nbsp;&nbsp;
+    
+
+<div style="padding: 20px;">
+
+    <ngx-slick-carousel class="carousel mt-3 card" 
+    #slickModal="slick-carousel" 
+    [config]="slideConfig" 
+    style=" margin-bottom: 100px;"
+    >
+
+    @for (slide of slides; track slide.img) {
+    <div ngxSlickItem class="slide" style="padding: 10px; ">
+        <div class=" " style="width: 95%; padding: 3px;">
+            <img src="{{ slide.img }}" alt="" class="img-fluid">
+            <div class="card-body">
+                <p class="font" [ngStyle]="!phone ? {'font-size':'1.2em'} : {'font-size':'0.8em'} ">Escalera de Aluminio</p>
+                <p class="font fs-8" style="color: rgb(189, 189, 189);">Ferreteria Viano</p>
+                <p class="font fs-10" style="">$150.000</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+        </div>
+    </div>
+    }
+    </ngx-slick-carousel>
+
+</div>
