@@ -1,0 +1,101 @@
+
+.header{
+    background-image: url('../assets/main-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.logo-container{
+  width: 200px; 
+  height: 200px; 
+  display: flex;
+  border-radius: 50%;  
+  justify-content: center; 
+  align-items: center; 
+
+  box-shadow: 0px 0px 10px 4px rgba(203, 203, 203, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(203, 203, 203, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(203, 203, 203, 0.75);
+}
+
+
+
+.carousel {
+  max-width: 100%; /* Ajusta el ancho máximo del carousel según tus necesidades */
+  margin: 0 auto; /* Centra el carousel horizontalmente en la página */
+  // padding: 30px;
+
+}
+
+/* Estilos para el carousel de Bootstrap */
+.carousel-item img {
+  max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+}
+
+.frame{
+  width: 80%;
+  background-color: white;
+}
+
+.clientFrame{
+  width: 48%;
+  height: 220px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+
+  box-shadow: 0px 0px 10px 4px rgba(203, 203, 203, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(203, 203, 203, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(203, 203, 203, 0.75);
+}
+
+
+
+
+ //Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 800px) {
+  
+   
+    
+  }
+  
+  //Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 800px) {
+  
+  
+   
+  
+    }
+  
+    
+  //Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 1200px) {
+  
+    .frame{
+      width: 93%;
+    }
+    
+  
+  }
+  
+  //Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 1400px) {
+    .header{
+        background-image: url('../assets/main-2-medium.jpg');
+        background-size: cover;
+    }
+
+    .frame{
+      width: 80%;
+    }
+    
+   
+  
+    
+  }
+  

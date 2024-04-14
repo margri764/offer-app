@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+  overflow-x: hidden;
+}
+
+
+@font-face {
+    font-family:'awesome';
+    src: url(assets/font/fontawesome-webfont.ttf);
+     
+}
+
+@font-face {
+  font-family:'poppins-light';
+  src: url(assets/font/poppins/Poppins-Light.ttf);
+   
+}
+
+@font-face {
+  font-family:'bebas-nehue';
+  src: url(assets/font/Bebas_Neue/BebasNeue-Regular.ttf);
+   
+}
+
+@font-face {
+  font-family:'luckiestGuy';
+  src: url(assets/font/Luckiest_Guy/LuckiestGuy-Regular.ttf);
+   
+}
+
+@font-face {
+  font-family:'baskerville';
+  src: url(assets/font/Libre_Baskerville/LibreBaskerville-Bold.ttf);
+   
+}
+
+
+input{
+    border-radius: 3px !important;
+}
+.card{
+  box-shadow: -1px 4px 14px -2px rgba(179, 179, 179, 0.55);
+  -webkit-box-shadow: -1px 4px 14px -2px rgba(179, 179, 179,0.55);
+  -moz-box-shadow: -1px 4px 14px -2px rgba(179, 179, 179,0.55);
+
+}
+
+.cursor{
+  cursor: pointer;
+}
