@@ -1,1 +1,0 @@
-import{a as r,c as e,l as m,p as n,q as i}from"./chunk-5VRWUIVC.js";var l=(()=>{let t=class t{};t.\u0275fac=function(s){return new(s||t)},t.\u0275mod=e({type:t}),t.\u0275inj=r({imports:[m,i,n,i]});let o=t;return o})();export{l as PagesModule};
