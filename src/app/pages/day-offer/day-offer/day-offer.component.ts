@@ -17,12 +17,12 @@ export class DayOfferComponent implements OnInit {
 
 
   slides = [
-    {img: "../assets/meat.png", name: 'CARNICERÍA'},
-    {img: "../assets/clean.png", name: 'LIMPIEZA'},
-    {img: "../assets/vegetables.png", name: 'FRUTAS Y VERDURAS'},
-    {img: "../assets/pets.png", name: 'MASCOTAS'},
-    {img: "../assets/drinks.png", name: 'BEBIDAS'},
-    {img: "../assets/store.png", name: 'DESPENSA'},
+    {img: "assets/meat.png", name: 'CARNICERÍA'},
+    {img: "assets/clean.png", name: 'LIMPIEZA'},
+    {img: "assets/vegetables.png", name: 'FRUTAS Y VERDURAS'},
+    {img: "assets/pets.png", name: 'MASCOTAS'},
+    {img: "assets/drinks.png", name: 'BEBIDAS'},
+    {img: "assets/store.png", name: 'DESPENSA'},
   ];
 
 

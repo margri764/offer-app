@@ -1,0 +1,35 @@
+
+<div class=" w-100">
+<!-- <div class="headerSearch"  *ngIf="phone"> -->
+<div class="headerSearch  animate__animated animate__fadeIn">
+
+    <span class="material-icons" (click)="goBack()">arrow_back_ios</span>
+    <div class="d-flex justify-content-center w-100" >
+
+    <form [formGroup]="myFormSearch" style="width: 90%;">
+
+            <div style=" position: relative;">
+                <input type="text" class="form-control font" placeholder="Buscar las mejores ofertas..." formControlName="itemSearch"  style="height: 50px; font-size: 0.8em;" (focus)="true" >
+                <span class="material-icons" style="position: absolute; top: 30%; right: 9px; color: #48443c; opacity: 0.6; font-size: 2em;">search</span>
+            </div>
+        </form>    
+    </div>
+
+</div>
+
+
+<div class="pd-20 ">
+
+    <div class="d-flex justify-content-start align-items-center mt-15" *ngFor="let search of searchs" (click)="reloadSearch(search)">
+        <span class="material-icons" style="color: rgb(139, 139, 139);" >history</span> 
+        <span  class="font fs-11 ml-20" [ngStyle]="{'max-width.%': maxWidthPercent}"  style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" > {{search}}</span>
+    </div>
+
+</div>
+
+
+
+
+
+</div>
+<img src="assets/logo-r.png" alt="" class="img-fluid animate__animated animate__fadeIn"  style="opacity: 0.8; position: sticky; top:50%; left: 50%; transform: translateX(-50%); width: 50%;">

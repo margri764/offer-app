@@ -1,18 +1,17 @@
 
+<app-starting-page *ngIf="!disabled"></app-starting-page>
 
+  <div class="page-wrapper" *ngIf="disabled">
 
-        <div class="page-wrapper">
-
-            <div class="content-wrapper">
-            
-                <div class="content">
-                  <router-outlet> </router-outlet> 
-                </div>
-                
-                <div class="footer">
-                  <app-footer> </app-footer>
-                </div> 
-                
-              </div> 
-            </div>
+      <div class="content-wrapper">
       
+          <div class="content">
+            <router-outlet> </router-outlet> 
+          </div>
+          
+          <div class="footer">
+            <app-footer *ngIf="!(router.url === '/search')"> </app-footer>
+          </div> 
+          
+        </div> 
+    </div>

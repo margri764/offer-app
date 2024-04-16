@@ -1,11 +1,13 @@
 import { Component, OnInit, HostListener, ElementRef, Renderer2, AfterViewInit, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel';
 import { SuggestByNavComponent } from "../../suggest-by-nav/suggest-by-nav/suggest-by-nav.component";
 import { DayOfferComponent } from "../../day-offer/day-offer/day-offer.component";
 import { WeeklyMostSearchComponent } from "../../weekly-most-search/weekly-most-search/weekly-most-search.component";
 import { CommonModule } from '@angular/common';
 import { SponsorComponent } from "../../sponsor/sponsor/sponsor.component";
+import { SideMenuComponent } from "../../side-menu/side-menu/side-menu.component";
+import { UserProfileComponent } from "../../user-profile/user-profile/user-profile.component";
 
 
 
@@ -14,7 +16,7 @@ import { SponsorComponent } from "../../sponsor/sponsor/sponsor.component";
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
-    imports: [SlickCarouselModule, SuggestByNavComponent, DayOfferComponent, WeeklyMostSearchComponent, CommonModule, SponsorComponent]
+    imports: [SlickCarouselModule, SuggestByNavComponent, DayOfferComponent, WeeklyMostSearchComponent, CommonModule, SponsorComponent, SideMenuComponent, UserProfileComponent]
 })
 export class HomeComponent {
 
@@ -24,8 +26,8 @@ export class HomeComponent {
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.slideTest = [
-      {img: window.innerWidth <= 800 ? "../assets/slider-1-phone.jpg" : "../assets/slider-1.jpg"},
-      {img: window.innerWidth <= 800 ? "../assets/slider-2-phone.jpg" : "../assets/slider-2.jpg"}
+      {img: window.innerWidth <= 800 ? "assets/slider-1-phone.jpg" : "assets/slider-1.jpg"},
+      {img: window.innerWidth <= 800 ? "assets/slider-2-phone.jpg" : "assets/slider-2.jpg"}
     ];
   }
 
@@ -36,12 +38,12 @@ export class HomeComponent {
 
 
   slides = [
-    {img: "../assets/meat.png", name: 'CARNICERÍA'},
-    {img: "../assets/clean.png", name: 'LIMPIEZA'},
-    {img: "../assets/vegetables.png", name: 'FRUTAS Y VERDURAS'},
-    {img: "../assets/pets.png", name: 'MASCOTAS'},
-    {img: "../assets/drinks.png", name: 'BEBIDAS'},
-    {img: "../assets/store.png", name: 'DESPENSA'},
+    {img: "assets/meat.png", name: 'CARNICERÍA'},
+    {img: "assets/clean.png", name: 'LIMPIEZA'},
+    {img: "assets/vegetables.png", name: 'FRUTAS Y VERDURAS'},
+    {img: "assets/pets.png", name: 'MASCOTAS'},
+    {img: "assets/drinks.png", name: 'BEBIDAS'},
+    {img: "assets/store.png", name: 'DESPENSA'},
   ];
 
 
@@ -66,7 +68,8 @@ export class HomeComponent {
   };
 
 
-  constructor(
+  constructor(  
+              private router : Router
                
   ) 
   {
@@ -75,6 +78,10 @@ export class HomeComponent {
   }
 
   ngOnInit(): void {
+  }
+
+  search(){
+    this.router.navigateByUrl('search')
   }
 
   goToNextSlide() {
