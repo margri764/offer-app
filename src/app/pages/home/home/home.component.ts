@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, ElementRef, Renderer2, AfterViewInit, ViewChild } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel';
 import { SuggestByNavComponent } from "../../suggest-by-nav/suggest-by-nav/suggest-by-nav.component";
 import { DayOfferComponent } from "../../day-offer/day-offer/day-offer.component";
@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { SponsorComponent } from "../../sponsor/sponsor/sponsor.component";
 import { SideMenuComponent } from "../../side-menu/side-menu/side-menu.component";
 import { UserProfileComponent } from "../../user-profile/user-profile/user-profile.component";
+import { MaterialModule } from '../../../material.module';
 
 
 
@@ -16,7 +17,7 @@ import { UserProfileComponent } from "../../user-profile/user-profile/user-profi
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
-    imports: [SlickCarouselModule, SuggestByNavComponent, DayOfferComponent, WeeklyMostSearchComponent, CommonModule, SponsorComponent, SideMenuComponent, UserProfileComponent]
+    imports: [SlickCarouselModule, SuggestByNavComponent, DayOfferComponent, WeeklyMostSearchComponent, CommonModule, SponsorComponent, SideMenuComponent, UserProfileComponent, MaterialModule, RouterModule]
 })
 export class HomeComponent {
 

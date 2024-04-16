@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-sponsor',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './sponsor.component.html',
   styleUrl: './sponsor.component.scss'
 })
@@ -22,12 +23,14 @@ export class SponsorComponent {
 
 
 
+
   constructor(
                
   ) 
   {
     (screen.width <= 800) ? this.phone = true : this.phone = false;
   }
+
 
 
 }
