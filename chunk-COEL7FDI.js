@@ -1,1 +1,0 @@
-import{a as n,b as i}from"./chunk-FW3OOJAX.js";import{g as r,ga as m,k as e}from"./chunk-GUCGONVB.js";var l=(()=>{let t=class t{};t.\u0275fac=function(s){return new(s||t)},t.\u0275mod=e({type:t}),t.\u0275inj=r({imports:[m,i,n,i]});let o=t;return o})();export{l as PagesModule};
