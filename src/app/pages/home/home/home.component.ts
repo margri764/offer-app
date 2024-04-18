@@ -9,6 +9,9 @@ import { SponsorComponent } from "../../sponsor/sponsor/sponsor.component";
 import { SideMenuComponent } from "../../side-menu/side-menu/side-menu.component";
 import { UserProfileComponent } from "../../user-profile/user-profile/user-profile.component";
 import { MaterialModule } from '../../../material.module';
+import { MatDialog } from '@angular/material/dialog';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { SignInComponent } from '../../../auth/pages/sign-in/sign-in/sign-in.component';
 
 
 
@@ -17,8 +20,8 @@ import { MaterialModule } from '../../../material.module';
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
-    imports: [SlickCarouselModule, SuggestByNavComponent, DayOfferComponent, WeeklyMostSearchComponent, CommonModule, SponsorComponent, SideMenuComponent, UserProfileComponent, MaterialModule, RouterModule]
-})
+    imports: [SlickCarouselModule, SuggestByNavComponent, DayOfferComponent, WeeklyMostSearchComponent, CommonModule, SponsorComponent, SideMenuComponent, UserProfileComponent, MaterialModule, RouterModule, ],
+  })
 export class HomeComponent {
 
 
@@ -70,7 +73,11 @@ export class HomeComponent {
 
 
   constructor(  
-              private router : Router
+              private router : Router,
+              public dialog: MatDialog,
+              private _bottomSheet: MatBottomSheet,
+              
+            
                
   ) 
   {
@@ -79,6 +86,10 @@ export class HomeComponent {
   }
 
   ngOnInit(): void {
+  }
+
+  openDialogLogin() {
+    this._bottomSheet.open(SignInComponent);
   }
 
   search(){

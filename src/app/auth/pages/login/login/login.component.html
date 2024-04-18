@@ -1,0 +1,60 @@
+<div #display></div>
+<!-- phone -->
+<div class="headerSearch animate__animated animate__fadeIn"  *ngIf="phone">
+
+    <div class="d-flex justify-content-start align-items-center w-100 ml-10 mt-20 mb-20 " (click)="goBack()">
+        <span class="material-icons "  style="color: white;">arrow_back_ios</span>
+        <span class="font fs-15 ml-10"  style="color: white;">Ingresá</span>
+    </div>
+
+  
+</div>
+
+<div class="pd-10 w-100" style="height: 90vh; position: relative; overflow-y: auto">
+
+    <form [formGroup]="myForm" class="d-flex flex-column justify-content-center align-items-center pd-10" style="margin-top: 50px;">   
+
+        <mat-form-field appearance="outline" class="mt-10 fs-10 w-100">		
+        <mat-label>Email</mat-label>
+        <input matInput type="email" required formControlName="email" >
+        </mat-form-field> 
+        <mat-error *ngIf="validField ('email')" fxLayoutAlign="start" class="font fs-10 mb-10">{{emailErrorMsg}}</mat-error> 
+    
+        <mat-form-field appearance="outline" class="mt-10 font fs-10 w-100" style="position: relative;">		
+        <mat-label>Contraseña</mat-label>
+        <input matInput [type]="passwordVisible ? 'text' : 'password'" required formControlName="password">
+        <button mat-icon-button class="password-toggle-button" (click)="togglePasswordVisibility('password')">
+            <mat-icon>{{ passwordVisible ? 'visibility' : 'visibility_off' }}</mat-icon>
+        </button>
+        </mat-form-field> 
+    
+        <mat-error *ngIf="validField('password') || passwordError" class="font fs-10 mb-10">
+        {{ passwordErrorMsg || passwordError }}
+        </mat-error>
+    
+        <div class="d-flex flex-column justify-content-start align-items-start w-100">
+        <div class="d-flex justify-content-start align-items-center w-100" >
+            <mat-label class="font fs-9" style="margin-right:0px;"><b>Recordarme</b></mat-label> &nbsp;
+            <mat-slide-toggle formControlName="toLStorage" [checked]="true"></mat-slide-toggle>
+        </div>
+        <span type="button" class="font fs-9 mt-10" style="cursor: pointer; align-items: start; color: blue;"><b (click)="openDialogPassword()"> ¿Olvidaste tu contraseña?</b> </span>
+        </div>
+    
+    </form>
+
+    <div class="d-flex flex-column justify-content-start align-items-start w-100 pd-20 mt-30">
+        <div class="d-flex justify-content-start align-items-center w-100" >
+        <mat-label class="font fs-9" style="margin-right:0px;"> ¿No tenes una cuenta? </mat-label> &nbsp;&nbsp;
+        <mat-label class="font fs-9 toSelect" > <b routerLink="/auth/sign-up"> Ingresá acá </b></mat-label> 
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between ">
+        <img src="assets/logo-sombra.png" alt="" class="img-fluid" >
+       
+    </div>
+
+</div>
+  
+  
+  

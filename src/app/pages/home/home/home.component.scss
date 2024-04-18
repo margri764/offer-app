@@ -91,6 +91,7 @@
 .logo-container{
   width: 180px; 
   height: 180px; 
+  background-color: white;
 }
 
 
@@ -104,6 +105,8 @@
 
   .frame{
     width: 100%;
+    background-color: rgb(241, 238, 231);
+
   }
 
   .logo-container{
@@ -141,7 +144,7 @@
   //Extra small devices (phones, 600px and down) */
   @media only screen and (min-width: 1400px) {
     .header{
-        background-color: url('../../../../assets/main-2.jpg');
+        background-image: url('../../../../assets/main-2.jpg');
         background-size: cover;
     }
 

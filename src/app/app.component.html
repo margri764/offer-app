@@ -10,7 +10,7 @@
           </div>
           
           <div class="footer">
-            <app-footer *ngIf="!(router.url === '/search')"> </app-footer>
+            <app-footer *ngIf="!(router.url === '/search' || router.url === '/auth/login' || router.url === '/auth/sign-up')"> </app-footer>
           </div> 
           
         </div> 

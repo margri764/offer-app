@@ -1,0 +1,81 @@
+<div #display></div>
+<!-- phone -->
+<div class="headerSearch animate__animated animate__fadeIn"  *ngIf="phone">
+
+    <div class="d-flex justify-content-start align-items-center w-100 ml-10 mt-20 mb-20 " (click)="goBack()">
+        <span class="material-icons "  style="color: white;">arrow_back_ios</span>
+        <span class="font fs-15 ml-10"  style="color: white;">Registrate</span>
+    </div>
+
+  
+</div>
+
+<div class="pd-10 w-100" style="height: 80vh; position: relative; overflow-y: auto">
+
+    <form [formGroup]="myForm" class="d-flex flex-column justify-content-center align-items-center pd-10" style="margin-top: 30px;">   
+
+        <mat-form-field appearance="outline" class="mt-10 fs-10 w-100">		
+        <mat-label>Nombre</mat-label>
+        <input matInput type="text" required formControlName="firstName" >
+        </mat-form-field> 
+        <mat-error *ngIf="validField ('firstName')" class="font fs-10 mb-10"> Campo requerido </mat-error> 
+
+         <mat-form-field appearance="outline" class="mt-10 fs-10 w-100">		
+        <mat-label>Apellido</mat-label>
+        <input matInput type="text" required formControlName="lastName" >
+        </mat-form-field> 
+        <mat-error *ngIf="validField ('lastName')"  class="font fs-10 mb-10"> Campo requerido </mat-error> 
+
+        <mat-form-field appearance="outline" class="mt-10 fontfs-10 w-100">		
+        <mat-label>Email</mat-label>
+        <input matInput type="email" required formControlName="email" >
+        </mat-form-field> 
+        <mat-error *ngIf="validField ('email')"  class="font fs-10 mb-10">{{emailErrorMsg}}</mat-error> 
+
+        <mat-form-field appearance="outline" class="mt-10 font fs-10 w-100" style="position: relative;">		
+        <mat-label >Contraseña</mat-label>
+        <input matInput [type]="passwordVisible ? 'text' : 'password'" required formControlName="password">
+        <button mat-icon-button class="password-toggle-button" (click)="togglePasswordVisibility('password')">
+            <mat-icon>{{ passwordVisible ? 'visibility' : 'visibility_off' }}</mat-icon>
+        </button>
+        </mat-form-field> 
+    
+        <mat-error *ngIf="validField('password') || passwordError" class="font fs-10 mb-10">
+        {{ passwordErrorMsg || passwordError }}
+        </mat-error>
+
+        <mat-form-field appearance="outline" class="mt-10 font fs-10 w-100" style="position: relative;">		
+            <mat-label>Confirmar contraseña</mat-label>
+            <input matInput [type]="passwordVisible ? 'text' : 'password'" required formControlName="confirm">
+            <button mat-icon-button class="password-toggle-button" (click)="togglePasswordVisibility('confirm')">
+                <mat-icon>{{ passwordVisible ? 'visibility' : 'visibility_off' }}</mat-icon>
+            </button>
+            </mat-form-field> 
+    
+            <div class="d-flex justify-content-start align-items-center font fs-10 mt-30">
+                <mat-slide-toggle formControlName="terms" required [checked]="termsSelected"></mat-slide-toggle>
+                <mat-label  class="font fs10 ml-10" > Registrándote estás de acuerdo con los <b style="color: blue; text-decoration:underline; cursor: pointer;" routerLink="../terminos-y-condiciones" > términos y condiciones de uso</b></mat-label> 
+
+                <mat-error  *ngIf ="validField ('terms')" fxFlex="100" class="mt-10 font fs-4" fxFlex="90">Campo requerido</mat-error> 
+          </div>
+          
+          <div class="d-flex justify-content-start align-items-center font fs-10 mt-10 w-100">
+            <mat-slide-toggle formControlName="marketing" [checked]="marketingSelected"></mat-slide-toggle>
+            <mat-label class="font fs-10" style="cursor: pointer">&nbsp; &nbsp; Quiero recibir promociones </mat-label>
+          </div>
+    
+    </form>
+
+    <div class="d-flex flex-column justify-content-start align-items-start w-100 mt-20">
+        <div class="d-flex justify-content-start align-items-center w-100" >
+        <mat-label class="font fs-9" style="margin-right:0px;"> ¿Ya tenes una cuenta? </mat-label> &nbsp;&nbsp;
+        <mat-label class="font fs-9 toSelect" > <b routerLink="/auth/login"> Ingresá acá </b></mat-label> 
+        </div>
+    </div>
+
+
+
+</div>
+  
+  
+  

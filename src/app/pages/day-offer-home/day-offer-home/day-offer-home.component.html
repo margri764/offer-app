@@ -1,0 +1,63 @@
+
+<div #display></div>
+<!-- phone -->
+<div class="headerSearch animate__animated animate__fadeIn" *ngIf="phone">
+
+    <div class="d-flex justify-content-start align-items-center w-100 ml-10 mt-15 "  (click)="goBack()">
+        <span class="material-icons " style="color: white;">arrow_back_ios</span>
+        <span class="font fs-15 ml-10"  style="color: white;">Ofertas diarias</span>
+
+    </div>
+
+    <div class="d-flex justify-content-center mt-20">
+        <div style="width: 90%; position: relative;">
+            <input type="text" class="form-control font " placeholder="Buscar en ofertas diarias"   style="height: 50px;"    >
+            <span class="material-icons" style="position: absolute; top: 30%; right: 9px; color: #48443c; opacity: 0.6; font-size: 2em;" >search</span>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-end flex-wrap w-100 pd-5 mt-20">
+    <div class="d-flex justify-content-start align-items-center" style="border: 1px solid gainsboro; border-radius: 30px; padding: 10px; background-color: white; opacity: 0.7;" data-bs-toggle="offcanvas" data-bs-target="#filter" aria-controls="offcanvasRight">
+        <span class="material-symbols-outlined" style="color: #ff8590; font-size: 25px;">filter_list</span>
+        <span class="d-block font fs-12  toSelect" > Filtros
+        </span>
+    </div>
+ </div>
+
+ 
+  
+
+<div class="d-flex flex-wrap justify-content-center pd-10 w-100 animate__animated animate__fadeIn">
+
+     <div class="d-flex flex-wrap justify-content-between w-100 mb-30 mt-30">
+
+        <div class="card d-flex justify-content-center align-items-center"  *ngFor="let slide of slides2">
+            <img src="{{ slide.img }}" alt="" class="img-fluid">
+            <div class="card-body">
+                <p class="font" [ngStyle]="!phone ? {'font-size':'1.2em'} : {'font-size':'0.8em'} ">Escalera de Aluminio</p>
+                <p class="font fs-8" style="color: rgb(189, 189, 189);">Ferreteria Viano</p>
+                <p class="font fs-10" style="">$150.000</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+        </div>
+
+
+     </div>
+
+
+    
+</div>
+
+<div class="offcanvas offcanvas-end canvasWidth" tabindex="-1" id="filter" aria-labelledby="offcanvasRightLabel"  >
+    <div class="offcanvas-header d-flex justify-content-end mt-20" style="padding-right: 30px;">
+        <span class="material-symbols-outlined" style="font-size: 30px;" data-bs-dismiss="offcanvas" aria-label="Close">close</span>
+    </div>
+    <div class="offcanvas-body">
+    <app-filter></app-filter>
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,46 @@
+
+<div #display></div>
+<!-- phone -->
+<div class="headerSearch animate__animated animate__fadeIn"  *ngIf="phone">
+
+    <div class="d-flex justify-content-start align-items-center w-100 ml-10 mt-20 mb-20 " (click)="goBack()">
+        <span class="material-icons">arrow_back_ios</span>
+        <span class="font fs-15 ml-10">Notificaciones</span>
+    </div>
+  
+</div>
+
+<div class="d-flex justify-content-end flex-wrap w-100 pd-5 mt-20 mb-20 animate__animated animate__fadeIn" >
+    <div class="d-flex justify-content-start align-items-center" style="border: 1px solid gainsboro; border-radius: 30px; padding: 10px; background-color: white; opacity: 0.7;" >
+        <span class="material-symbols-outlined" style="color: red; transform: scale(0.9);">delete</span>
+        &nbsp;
+        <span class="d-block font fs-10  toSelect" > Eliminar todas
+        </span>
+    </div>
+ </div>
+
+<div class="d-flex frame animate__animated animate__fadeIn" *ngFor="let notif of notifications" >
+
+        <div class="col-3">
+            <img [src]="notif.img" alt="" class="" style="width: 80px; height: auto;">
+        </div>
+
+        <div class="col-8">
+            <span class="font fs-9">  <b> {{ notif.category }} </b> </span> <br>
+            <span class="font fs-8"> {{ notif.message }} </span>
+        </div>
+
+        <div class="col-1">
+            <span class="font fs-8"> {{ notif.date }} </span> <br><br>
+            <span class="material-symbols-outlined" style="color: red; transform: scale(0.9);">delete</span>
+        </div>
+       
+
+
+</div>
+
+
+
+
+
+

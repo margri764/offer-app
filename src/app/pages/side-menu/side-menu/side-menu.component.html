@@ -1,21 +1,19 @@
 
 
-<div class="d-flex flex-column align-items-start "  >
+<div class="d-flex flex-column align-items-start " style="overflow-y: auto; height: 100vh;"  >
 
 
- 
-
-  <div class="d-flex justify-content-center" style="margin-top: 50px;">
+  <div class="d-flex justify-content-center" style="margin-top: 20px;" routerLink="ofertas-diarias">
     <span class="material-symbols-outlined icons">local_offer</span>
-    <span class="font fs-12 ml-15"> OFERTAS </span>
+    <span class="font fs-12 ml-15"> OFERTAS DIARIAS </span>
   </div>
 
-  <div class="d-flex justify-content-center mt-20">
+  <div class="d-flex justify-content-center mt-20" routerLink="categorias">
     <span class="material-symbols-outlined icons">category</span>
     <span class="font fs-12 ml-15"> CATEGORIAS </span>
   </div>
 
-  <div class="d-flex justify-content-center mt-20">
+  <div class="d-flex justify-content-center mt-20" routerLink="anunciantes">
     <span class="material-symbols-outlined icons">groups</span>
     <span class="font fs-12 ml-15"> ANUNCIANTES </span>
   </div>
@@ -30,19 +28,18 @@
     <span class="font fs-12 ml-15"> OFERTAS RELAMPAGO </span>
   </div>
 
-  <div class="d-flex justify-content-center mt-20">
+  <div class="d-flex justify-content-center mt-20" routerLink="vouchers">
     <span class="material-symbols-outlined icons">rocket_launch</span>
-    <span class="font fs-12 ml-15"> CUPONES DE DESCUENTO </span>
+    <span class="font fs-12 ml-15"> VOUCHERS </span>
   </div>
 
-  <div class="d-flex justify-content-center mt-20">
+  <div class="d-flex justify-content-center mt-20" *ngIf="logged">
     <span class="material-symbols-outlined  icons">favorite</span>
     <span class="font fs-12 ml-15"> TUS FAVORITOS </span>
   </div>
 
-  <div class="d-flex justify-content-center mt-20 ">
+  <div class="d-flex justify-content-center mt-20 " routerLink="notificaciones">
     <span class="material-symbols-outlined  icons ">notifications</span>
-    
     <span class="font fs-12 ml-15 position-relative"> NOTIFICACIONES 
         <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle ml-20">
             <div style="width: 20px; height: 20px; text-align: center; font-size: 0.8em;" >3</div>

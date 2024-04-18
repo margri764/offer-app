@@ -4,8 +4,8 @@
 <!-- phone -->
 <div class="headerSearch animate__animated animate__fadeIn"  *ngIf="phone">
 
-    <div class="d-flex justify-content-start align-items-center w-100 ml-10 mt-15 ">
-        <span class="material-icons " (click)="goBack()" style="color: white;">arrow_back_ios</span>
+    <div class="d-flex justify-content-start align-items-center w-100 ml-10 mt-15" (click)="goBack()">
+        <span class="material-icons "  style="color: white;">arrow_back_ios</span>
         <span class="font fs-15 ml-10"  style="color: white;">Anunciantes</span>
 
     </div>
@@ -19,89 +19,28 @@
 </div>
 
 
-<div class="d-flex flex-wrap justify-content-center pd-10 w-100 animate__animated animate__fadeIn">
+<div class="d-flex flex-wrap justify-content-between pd-10">
 
-    <div class="d-flex flex-column justify-content-center align-items-center" *ngFor="let slide of slides">
-        
-        <img [src]="slide.img" alt="" class="img-fluid mt-10" width="80%">
+        <div class="d-flex clientFrame justify-content-between "  *ngFor="let slide of slides" [routerLink]="['/anunciantes/',slide.title ]">
+            
+            <div class="d-flex justify-content-center align-items-center " style="width: 40%;" >
+                <img [src]="slide.img" alt="" class="img-fluid" width="100%">
+            </div>
 
-        <div class="d-flex flex-column justify-content-center  clientFrame w-100" >
-            <p class="d-block w-100 font" [ngStyle]="!phone ? {'font-size':'1.6em'}:{'font-size':'1.3em'}" > {{ slide.title | uppercase }}</p>
+            <div class="d-flex flex-column justify-content-center" style="width: 60%; padding-left: 10px;"  >
+                <p class="d-block w-100 font" [ngStyle]="!phone ? {'font-size':'1.6em', 'padding-left':'10px'}:{'font-size':'1.2em'}" > {{ slide.title | uppercase }}</p>
 
-            <div class="d-flex justify-content-between" >
-                <div class="d-flex justify-content-start" >
+                <div class="d-flex justify-content-start " >
                     <span class="material-icons " style="color: blue;">share_location</span>
                     <span class="font" [ngStyle]="!phone ? {'font-size':'1.2em'}:{'font-size':'0.9em'}"> &nbsp; {{ slide.address }} </span>
                 </div>
 
-                <div class="d-flex justify-content-start" >
+                <div class="d-flex justify-content-start mt-2 " >
                     <span class="material-icons " style="color: blue;">phone</span>
                     <span class="font" [ngStyle]="!phone ? {'font-size':'1.2em'}:{'font-size':'0.9em'}"> &nbsp; {{ slide.phone }} </span>
                 </div>
             </div>
-
-            <div class="d-flex justify-content-start mt-20" >
-
-                <a target="_blank"> 
-                    <i class="fab fa-whatsapp" ></i>
-                  </a>
-
-                 <a target="_blank" title="Instagram" href="https://www.instagram.com/re.vi.mack_agro/?hl=es">
-                    <i class="fab fa-instagram ml-15"></i>
-                 </a>
- 
-                 <a target="_blank" title="Facebook" href="https://www.facebook.com/search/top?q=revimack%20agro">
-                    <i class="fab fa-facebook-f ml-15"></i>
-                 </a>
- 
-                 <a target="_blank" title="email" href="mailto:revimackventas@gmail.com">
-                   <i class="fa fa-envelope ml-15"></i>
-                 </a>
- 
-                <a target="_blank" title="gps" href="https://goo.gl/maps/4indGx9FR3M1qX5b6">
-                 <i class="fas fa-map-marker-alt ml-15"></i>
-                </a>
-            </div>
         </div>
-    </div>
-
-    <div class="d-flex justify-content-end flex-wrap w-100 pd-5 mt-20">
-        <span class="d-block font fs-11 mt-30 toSelect" style="text-decoration: underline;" data-bs-toggle="offcanvas" data-bs-target="#filter" aria-controls="offcanvasRight"> Filtros
-        </span>
-     </div>
-
-     <div class="d-flex flex-wrap justify-content-between w-100 mb-30 mt-30">
-
-        <div class="card d-flex justify-content-center align-items-center " *ngFor="let slide of slides2">
-            <img src="{{ slide.img }}" alt="" class="img-fluid">
-            <div class="card-body">
-                <p class="font" [ngStyle]="!phone ? {'font-size':'1.2em'} : {'font-size':'0.8em'} ">{{slide.name}}</p>
-                <p class="font fs-8" style="color: rgb(189, 189, 189);">Ferreteria Viano</p>
-                <p class="font fs-10" style="">$150.000</p>
-            </div>
-
-            <div class="d-flex justify-content-center align-items-center" style="border-radius: 50%; border: 1px solid rgb(214, 214, 214); height: 30px; width: 30px;  position: absolute; right:0px; top: 10px; background-color: rgb(242, 242, 242, 0.3);" (click)="favorite(slide)" >
-                <span class="material-icons" style="color: blueviolet; transform: scale(0.75);" *ngIf="selectedFavorite" >favorite_border</span>
-                <span class="material-icons" style="color: blueviolet; transform: scale(0.75);" *ngIf="!selectedFavorite">favorite</span>
-            </div>
-
-        </div>
-
-
-     </div>
-
-
     
 </div>
-
-<div class="offcanvas offcanvas-end canvasWidth" tabindex="-1" id="filter" aria-labelledby="offcanvasRightLabel"  >
-    <div class="offcanvas-header" >
-      <h5 id="offcanvasRightLabel"></h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" #cerrarCanvas></button>
-    </div>
-    <div class="offcanvas-body">
-    <app-filter></app-filter>
-    </div>
-</div>
-
 

@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { SlickCarouselComponent, SlickCarouselModule } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-day-offer',
   standalone: true,
-  imports: [ SlickCarouselModule, CommonModule],
+  imports: [ SlickCarouselModule, CommonModule, RouterModule],
   templateUrl: './day-offer.component.html',
   styleUrl: './day-offer.component.scss'
 })

@@ -1,27 +1,32 @@
 import { CommonModule, Location } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FilterComponent } from "../../filter/filter/filter.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-sponsor-home',
     standalone: true,
     templateUrl: './sponsor-home.component.html',
     styleUrl: './sponsor-home.component.scss',
-    imports: [CommonModule, FilterComponent]
+    imports: [CommonModule, FilterComponent, RouterModule]
 })
 export class SponsorHomeComponent {
   
   @ViewChild ('display' , {static: true} ) display! : ElementRef;
 
   phone : boolean = false;
-  placeholder : string = "Buscar en Zig Zag...";
+  placeholder : string = "Buscar en anunciantes...";
   selectedFavorite : any;
 
 
   slides = [
-    {img: "assets/zigzag.png", title: 'Zig Zag', address: "Av. Mullally 1894", phone: "0233115462759"},
-   
+    {img: "assets/zigzag.png", title: 'Zig Zag', address: "Av. Mullally 1894", phone: "02331 15-46-2759"},
+    {img: "assets/avicola.png", title: 'Avícola Realicó', address: "Francia 1672", phone: "02331 15-46-2759"},
+    {img: "assets/levin.png", title: 'Levin', address: "Av. Mullally 2002", phone: "02331 15-46-2759"},
   ];
+
+
+  
 
   
   slides2 = [
