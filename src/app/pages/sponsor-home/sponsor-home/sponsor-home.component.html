@@ -4,9 +4,12 @@
 <!-- phone -->
 <div class="headerSearch animate__animated animate__fadeIn"  *ngIf="phone">
 
-    <div class="d-flex justify-content-start align-items-center w-100 ml-10 mt-15" (click)="goBack()">
-        <span class="material-icons "  style="color: white;">arrow_back_ios</span>
-        <span class="font fs-15 ml-10"  style="color: white;">Anunciantes</span>
+    <div class="d-flex justify-content-between align-items-center w-100 ml-10 mt-15 ">
+        <div class="d-flex justify-content-start align-items-center w-100 ml-10" (click)="goBack()">
+            <span class="material-icons "  style="color: white;">arrow_back_ios</span>
+            <span class="font fs-15 ml-10"  style="color: white;"> Anunciantes </span>
+        </div>
+        <span class="material-symbols-outlined fs-20" style="color: white; margin-right: 15px;" routerLink="/" >home</span>
 
     </div>
 

@@ -1,12 +1,13 @@
 import { CommonModule, Location } from '@angular/common';
 import { AfterViewChecked, ChangeDetectorRef, Component, ElementRef, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-search',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule],
   templateUrl: './search.component.html',
   styleUrl: './search.component.scss'
 })

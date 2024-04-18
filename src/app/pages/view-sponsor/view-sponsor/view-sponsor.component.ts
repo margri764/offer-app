@@ -1,14 +1,14 @@
 import { CommonModule, Location } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FilterComponent } from "../../filter/filter/filter.component";
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-view-sponsor',
     standalone: true,
     templateUrl: './view-sponsor.component.html',
     styleUrl: './view-sponsor.component.scss',
-    imports: [CommonModule, FilterComponent]
+    imports: [CommonModule, FilterComponent, RouterModule]
 })
 export class ViewSponsorComponent implements OnInit{
 

@@ -76,9 +76,6 @@ export class HomeComponent {
               private router : Router,
               public dialog: MatDialog,
               private _bottomSheet: MatBottomSheet,
-              
-            
-               
   ) 
   {
     (screen.width <= 800) ? this.phone = true : this.phone = false;

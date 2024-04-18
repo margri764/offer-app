@@ -1,13 +1,14 @@
 import { CommonModule, Location } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FilterComponent } from "../../filter/filter/filter.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-day-offer-home',
     standalone: true,
     templateUrl: './day-offer-home.component.html',
     styleUrl: './day-offer-home.component.scss',
-    imports: [CommonModule, FilterComponent]
+    imports: [CommonModule, FilterComponent, RouterModule]
 })
 export class DayOfferHomeComponent {
 

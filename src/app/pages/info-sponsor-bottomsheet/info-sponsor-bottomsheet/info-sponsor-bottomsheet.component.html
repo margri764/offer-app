@@ -1,0 +1,29 @@
+<div class="d-flex flex-wrap justify-content-between pd-10" style="background-color: rgb(255, 255, 255);">
+
+    <div class="d-flex clientFrame justify-content-between mt-10">
+        
+        <div class="d-flex justify-content-center align-items-center " style="width: 40%;" >
+            <img [src]="sponsor.img" alt="" class="img-fluid" width="100%">
+        </div>
+
+        <div class="d-flex flex-column justify-content-center" style="width: 60%; padding-left: 10px;"  >
+            <p class="d-block w-100 font" [ngStyle]="!phone ? {'font-size':'1.6em', 'padding-left':'10px'}:{'font-size':'1.2em'}" > {{ sponsor.title | uppercase }}</p>
+
+            <div class="d-flex justify-content-start " >
+                <span class="material-icons " style="color: blue;">share_location</span>
+                <span class="font" [ngStyle]="!phone ? {'font-size':'1.2em'}:{'font-size':'0.9em'}"> &nbsp; {{ sponsor.address }} </span>
+            </div>
+
+            <div class="d-flex justify-content-start mt-2 " >
+                <span class="material-icons " style="color: blue;">phone</span>
+                <span class="font" [ngStyle]="!phone ? {'font-size':'1.2em'}:{'font-size':'0.9em'}"> &nbsp; {{ sponsor.phone }} </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-end mt-10 w-100 pd-10 "  (click)="closeBottomsheet()" [routerLink]="['/anunciantes/', sponsor?.title ]">
+        
+        <span class="font fs-10 toSelect"> Ir a la tienda de</span> &nbsp; {{ sponsor?.title }}
+    </div>
+
+</div>

@@ -8,6 +8,8 @@ import { HomeComponent } from './pages/home/home/home.component';
 import { VouchersComponent } from './pages/vouchers/vouchers/vouchers.component';
 import { NotificationComponent } from './pages/notification/notification/notification.component';
 import { ViewSponsorComponent } from './pages/view-sponsor/view-sponsor/view-sponsor.component';
+import { ViewCategoryComponent } from './pages/view-category/view-category/view-category.component';
+import { ViewMoreComponent } from './pages/view-more/view-more/view-more.component';
 
 
 export const routes: Routes = [
@@ -18,6 +20,8 @@ export const routes: Routes = [
   { path: 'anunciantes',  component: SponsorHomeComponent, data:{ title:"sponsor"}},
   { path: 'anunciantes/:id',  component: ViewSponsorComponent, data:{ title:"sponsor"}},
   { path: 'categorias',  component: CategoryHomeComponent, data:{ title:"category"}},
+  { path: 'categorias/:id',  component: ViewCategoryComponent, data:{ title:"category"}},
+  { path: 'ver-mas/:id',  component: ViewMoreComponent, data:{ title:"view-more"}},
   { path: 'ofertas-diarias',  component: DayOfferHomeComponent, data:{ title:"offers"}},
   { path: 'vouchers',  component: VouchersComponent, data:{ title:"vouchers"}},
   { path: 'notificaciones',  component: NotificationComponent, data:{ title:"notifications"}},

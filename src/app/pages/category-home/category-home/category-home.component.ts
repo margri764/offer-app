@@ -1,11 +1,12 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { MaterialModule } from '../../../material.module';
 import { CommonModule, Location } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-category-home',
   standalone: true,
-  imports: [CommonModule, MaterialModule],
+  imports: [CommonModule, MaterialModule, RouterModule],
   templateUrl: './category-home.component.html',
   styleUrl: './category-home.component.scss'
 })
