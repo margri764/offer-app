@@ -1,1 +1,82 @@
-<p>active-publication works!</p>
+   
+ <div class="d-flex flex-column justify-content-center align-items-center w-100 animate__animated animate__fadeIn " >
+
+    <div class="d-flex justify-content-end align-items-center mt-20 w-100 pd-5">
+
+        <button mat-fab color="accent" style="width: 40px; height: 40px; margin-right: 5px;" aria-label="Example icon button with a delete icon" >
+            <mat-icon>delete</mat-icon>
+        </button>
+        <button mat-fab color="primary" style="width: 40px; height: 40px;" aria-label="Example icon button with a delete icon" routerLink="/auth/mi-tienda/mis-publicaciones" >
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center rectangule mt-30 w-99 cursor" style="border-left: 4px solid #3370f5;" *ngIf="showLabel" (click)="showLabel = false">
+
+        <span class="material-symbols-outlined" style="color: rgb(255, 170, 0);">info</span>
+        <span class="font fs-10 pd-10">
+            Podes pausar, eliminar y crear nuevas publicaciones
+        </span>
+        <span class="material-symbols-outlined" style="transform: scale(0.8); margin-bottom: 20px;">close</span>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center rectangule w-99 cursor mt-20" style="border-left: 4px solid #3370f5;" *ngIf="showLabel" (click)="showLabel = false">
+
+        <span class="material-symbols-outlined" style="color: rgb(255, 170, 0);">info</span>
+        <span class="font fs-10 pd-10">
+            Las publicaciones pausadas, permaceran en ese estado hasta que decidas volver a activarlas o hasta que se eliminen
+        </span>
+        <span class="material-symbols-outlined" style="transform: scale(0.8); margin-bottom: 20px;">close</span>
+   </div>
+
+
+
+
+   <div class=" mat-elevation-z8 container font mt-30 w-99" style="background-color: white; border-radius: 10px; margin-top: 18px;">
+                
+    <table mat-table [dataSource]="dataTableActive"  >
+    
+            <ng-container matColumnDef="img" sticky >
+                <th mat-header-cell *matHeaderCellDef > Img </th>
+                <td mat-cell *matCellDef="let element" > 
+                  <img [src]="element.img" alt="" style="width: 50px;">  
+                 </td>
+            </ng-container>
+
+            <ng-container matColumnDef="title" >
+                <th mat-header-cell *matHeaderCellDef> Título</th>
+                <td mat-cell *matCellDef="let element" >
+                    <span class="font">{{ element.title}} </span> 
+                  
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="expirationDate" >
+                <th mat-header-cell *matHeaderCellDef> Venc.</th>
+                <td mat-cell *matCellDef="let element" > 
+                    <span class="font fs-9"> {{element.expirationDate}} </span>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="action"  >
+                <th mat-header-cell *matHeaderCellDef >Accion</th>
+                <td mat-cell *matCellDef="let element" > 
+                    <div style=" display: flex; justify-content:center; " >
+                         <span class="material-symbols-outlined notranslate cursor" style="color: rgb(255, 170, 0)">pause_circle</span>
+                         <span class="material-symbols-outlined notranslate cursor" style="color: red">delete</span>
+                    </div>
+
+            </td>
+    
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          
+    </table>
+
+   </div> 
+
+
+
+</div>
+

@@ -1,0 +1,78 @@
+<div #display></div>
+
+<div class="d-flex flex-column  align-items-center animate__animated animate__fadeIn" style="width: 97%;">
+
+
+        <div class="d-flex justify-content-end align-items-center mt-30  w-100">
+            <span class="material-symbols-outlined" (click)="close()">close</span>
+        </div>
+
+
+        <div class="d-flex justify-content-center align-items-start mt-30  w-100">
+            <img src="assets/instagram.png" alt="" class="img-fluid" style="width: 90px;">
+        </div>
+
+
+        <form [formGroup]="myForm" class="d-flex flex-column justify-content-start align-items-center pd-10 mt-10">   
+    
+    
+                    <mat-form-field appearance="outline" class="mt-10 font fs-11 w-100 ">		
+                    <mat-label > link / número</mat-label>
+                    <input matInput type="text" required formControlName="social" >
+                    </mat-form-field> 
+                    <mat-error *ngIf="validField ('social')" class="font fs-10">Campo requerido</mat-error> 
+    
+                    <div class="d-flex d-flex justify-content-between rectangule mt-30 mb-30" style="border-left: 4px solid #3370f5;">
+    
+                        <span class="material-symbols-outlined" style="color: rgb(255, 170, 0);">info</span>
+                        <span class="font fs-10 pd-10">
+                            Debes ingresar el link a tu red social o el número de teléfono, según corresponda
+                        </span>
+                    </div>
+    
+    
+                    <button type="button"  class="fs-12 mt-10 mb-20 saveBtn"> Guardar </button>
+                
+            
+            
+            
+                <!-- <div class="d-flex justify-content-around align-items-center mt-20 rectangule w-100" style="padding: 20px;" >
+    
+                    <a target="_blank" (click)="openDialog()"> 
+                        <i class="fab fa-whatsapp" ></i>
+                      </a>
+        
+                     <a target="_blank" title="Instagram" href="https://www.instagram.com/re.vi.mack_agro/?hl=es">
+                        <i class="fab fa-instagram ml-15"></i>
+                     </a>
+        
+                     <a target="_blank" title="Facebook" href="https://www.facebook.com/search/top?q=revimack%20agro">
+                        <i class="fab fa-facebook-f ml-15"></i>
+                     </a>
+        
+                     <a target="_blank" title="email" href="mailto:revimackventas@gmail.com">
+                       <i class="fa fa-envelope ml-15"></i>
+                     </a>
+        
+                    <a target="_blank" title="gps" href="https://goo.gl/maps/4indGx9FR3M1qX5b6">
+                     <i class="fas fa-map-marker-alt ml-15"></i>
+                    </a>
+    
+                    <button mat-fab class="ml-15"  style="width: 35px; height: 35px; background-color: #3370f5;" aria-label="Example icon button with a delete icon" routerLink="/auth/mi-tienda/mis-publicaciones" >
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </div>
+    
+                <div class="d-flex justify-content-start align-items-center w-100 mt-10 ">
+                    <span class="font fs-10 ">*Editá tus medios de comunicación </span> 
+                </div>
+     
+                -->
+                
+         
+    
+        </form>
+
+
+
+</div>

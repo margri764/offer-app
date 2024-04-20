@@ -1,0 +1,32 @@
+th{
+    font-family: 'poppins-light';
+}
+
+.container {
+    width: 100%;
+    height: calc(100vh - 400px);
+    overflow: auto;
+    font-size: 1.8em;
+    font-family: 'poppins-light'; 
+  }
+
+.img{
+  width: 100%;
+  font-size: 0.8em;
+  font-family: 'poppins-light'; 
+}
+
+th.mat-column-title, td.mat-column-title {
+    padding-left: 8px;
+    width: 30%;
+    cursor: pointer;
+    text-align: start;
+  }
+
+.mat-column-expirationDate {
+  width: 20%;
+  cursor: pointer;
+  text-align: start;
+  padding-left: 5px;
+}
+

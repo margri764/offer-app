@@ -14,8 +14,8 @@ import { StartingPageComponent } from "./pages/starting-page/starting-page/start
 })
 export class AppComponent implements OnInit {
 
-  // disabled : boolean = true;
-  disabled : boolean = false;
+  disabled : boolean = true;
+  // disabled : boolean = false;
 
  
   constructor(
