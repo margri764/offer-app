@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1714011734353,
+  "timestamp": 1714012079990,
   "index": "/offer-app/index.html",
   "assetGroups": [
     {
@@ -68,6 +68,7 @@
         "/offer-app/assets/font/poppins/Poppins-Thin.ttf",
         "/offer-app/assets/font/poppins/Poppins-ThinItalic.ttf",
         "/offer-app/assets/google.png",
+        "/offer-app/assets/icons/Diseño sin título.png",
         "/offer-app/assets/icons/icon-128x128.png",
         "/offer-app/assets/icons/icon-144x144.png",
         "/offer-app/assets/icons/icon-152x152.png",
@@ -163,12 +164,13 @@
     "/offer-app/assets/font/poppins/Poppins-Thin.ttf": "09ba4dcd5509c8085bf88c665dcc51cbdfced27b",
     "/offer-app/assets/font/poppins/Poppins-ThinItalic.ttf": "fb8fccca21550e71135f92bbaf8a2e8a12c90465",
     "/offer-app/assets/google.png": "e794af04c35cfcccfee914b45e87a2bdbee38d51",
+    "/offer-app/assets/icons/Diseño sin título.png": "4d0d95625970c48ccb9f7af6ed9d94b93db74787",
     "/offer-app/assets/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
     "/offer-app/assets/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
     "/offer-app/assets/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
     "/offer-app/assets/icons/icon-192x192.png": "38b5eb622a1fe0fc07aeb031d32799a873c80d4b",
-    "/offer-app/assets/icons/icon-384x384.png": "3f511e9decbdb4ea3ee8a12b319513975f6e7ac0",
-    "/offer-app/assets/icons/icon-512x512.png": "e4129dac49fed05e22fad3d0d87e39213dafba1b",
+    "/offer-app/assets/icons/icon-384x384.png": "cde0b32812a2a99b1212ec931a351762f9b36f0a",
+    "/offer-app/assets/icons/icon-512x512.png": "e311f377242452facbc808bf82c366887c875413",
     "/offer-app/assets/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/offer-app/assets/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
     "/offer-app/assets/image/logo_512x512.jpg": "7c43e56cef81f054af7c097fe5eaa17d83086b17",
