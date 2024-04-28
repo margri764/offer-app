@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1714269207567,
+  "timestamp": 1714314270248,
   "index": "/offer-app/index.html",
   "assetGroups": [
     {
@@ -11,18 +11,18 @@
         "ignoreVary": true
       },
       "urls": [
+        "/offer-app/chunk-3APGVLGF.js",
         "/offer-app/chunk-7NZ5ILO3.js",
         "/offer-app/chunk-HCRMFW44.js",
         "/offer-app/chunk-JNMSKBHY.js",
-        "/offer-app/chunk-JRUULKKB.js",
-        "/offer-app/chunk-SKHDCAFU.js",
+        "/offer-app/chunk-OKEWLMQQ.js",
         "/offer-app/favicon.ico",
         "/offer-app/index.html",
-        "/offer-app/main-KNRXSX63.js",
+        "/offer-app/main-W72RW3UL.js",
         "/offer-app/manifest.webmanifest",
         "/offer-app/polyfills-BJX5WH5B.js",
         "/offer-app/scripts-T5G4RYMF.js",
-        "/offer-app/styles-WERSIGYX.css"
+        "/offer-app/styles-OVSXJZT7.css"
       ],
       "patterns": []
     },
@@ -236,14 +236,14 @@
     "/offer-app/assets/voucher.jpg": "5cf487533b267a1fafee03a10d0afce09ba70782",
     "/offer-app/assets/voucher.png": "93f5ad5d458f604b218e6b93c107f1a89df2f164",
     "/offer-app/assets/zigzag.png": "776fcce87df7b923217dc70fb92362e593b2495a",
+    "/offer-app/chunk-3APGVLGF.js": "05436d4cc66bb014c9e0f77ef51de3ca3d96c448",
     "/offer-app/chunk-7NZ5ILO3.js": "bd07f40a1e91562afbf6aa282d7d48b600f6acd7",
     "/offer-app/chunk-HCRMFW44.js": "d1f73b4a3b3da368b1bf59f730e8b143e94ff5c8",
     "/offer-app/chunk-JNMSKBHY.js": "6a8e5b0ecea75642b9c564db29e82b78833db98d",
-    "/offer-app/chunk-JRUULKKB.js": "7da74cf5b00432a4485eb0e390b40cb46c76ecc4",
-    "/offer-app/chunk-SKHDCAFU.js": "017feb2bf114aea6937e459ca197a0e4d25e97d1",
+    "/offer-app/chunk-OKEWLMQQ.js": "ecb9917bd0dc9187d539ec6028b708d69b542494",
     "/offer-app/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/offer-app/index.html": "bd8c8cd33c58930a42c93b9575fbd4e6011cf032",
-    "/offer-app/main-KNRXSX63.js": "3e4243fdb10c2f18b2280f13e440fcc96c92b073",
+    "/offer-app/index.html": "bab296e2ad3644a86e84e6e66d57b72eb9a56d6a",
+    "/offer-app/main-W72RW3UL.js": "57ef07a77872d973b55feda969f49f59ad3d435e",
     "/offer-app/manifest.webmanifest": "6367d462909905289a51dfa70e8fff801ac245fd",
     "/offer-app/media/BebasNeue-Regular-7DGWW7LF.ttf": "8b3aaeb978f3cb5f575860774b50c332338563c1",
     "/offer-app/media/LibreBaskerville-Bold-FPHSRN73.ttf": "f8081cbeceb2e69fdffca2348b2c9e0933cd52b5",
@@ -259,7 +259,7 @@
     "/offer-app/media/slick-NKQ64RRA.ttf": "3331eebdd4ba348ef25abe00c39ffbe867d46575",
     "/offer-app/polyfills-BJX5WH5B.js": "72a5a6861724328de149c14045355281bd3c8266",
     "/offer-app/scripts-T5G4RYMF.js": "14f773662cf16f717e634943e4ca7a5bfbed7a2c",
-    "/offer-app/styles-WERSIGYX.css": "311a24fe08921c3983574aa0b04892b7696478df"
+    "/offer-app/styles-OVSXJZT7.css": "9b62753cf1a50f6a7946a23000cb621afff37d3b"
   },
   "navigationUrls": [
     {
