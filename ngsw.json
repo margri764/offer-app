@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1714268490083,
+  "timestamp": 1714269207567,
   "index": "/offer-app/index.html",
   "assetGroups": [
     {
@@ -15,14 +15,14 @@
         "/offer-app/chunk-HCRMFW44.js",
         "/offer-app/chunk-JNMSKBHY.js",
         "/offer-app/chunk-JRUULKKB.js",
-        "/offer-app/chunk-XHKJOZPR.js",
+        "/offer-app/chunk-SKHDCAFU.js",
         "/offer-app/favicon.ico",
         "/offer-app/index.html",
-        "/offer-app/main-LFBP4JAO.js",
+        "/offer-app/main-KNRXSX63.js",
         "/offer-app/manifest.webmanifest",
         "/offer-app/polyfills-BJX5WH5B.js",
         "/offer-app/scripts-T5G4RYMF.js",
-        "/offer-app/styles-JVFAAH63.css"
+        "/offer-app/styles-WERSIGYX.css"
       ],
       "patterns": []
     },
@@ -240,10 +240,10 @@
     "/offer-app/chunk-HCRMFW44.js": "d1f73b4a3b3da368b1bf59f730e8b143e94ff5c8",
     "/offer-app/chunk-JNMSKBHY.js": "6a8e5b0ecea75642b9c564db29e82b78833db98d",
     "/offer-app/chunk-JRUULKKB.js": "7da74cf5b00432a4485eb0e390b40cb46c76ecc4",
-    "/offer-app/chunk-XHKJOZPR.js": "ea45d0b63137f95c5fa42d13f2400eb3bbbf3e49",
+    "/offer-app/chunk-SKHDCAFU.js": "017feb2bf114aea6937e459ca197a0e4d25e97d1",
     "/offer-app/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/offer-app/index.html": "3dce2aadb0ffc0eea488bfc86bda6dd8f740be1e",
-    "/offer-app/main-LFBP4JAO.js": "a6e57bd4d832a12577ffa17696d96b8d5c9f69b7",
+    "/offer-app/index.html": "bd8c8cd33c58930a42c93b9575fbd4e6011cf032",
+    "/offer-app/main-KNRXSX63.js": "3e4243fdb10c2f18b2280f13e440fcc96c92b073",
     "/offer-app/manifest.webmanifest": "6367d462909905289a51dfa70e8fff801ac245fd",
     "/offer-app/media/BebasNeue-Regular-7DGWW7LF.ttf": "8b3aaeb978f3cb5f575860774b50c332338563c1",
     "/offer-app/media/LibreBaskerville-Bold-FPHSRN73.ttf": "f8081cbeceb2e69fdffca2348b2c9e0933cd52b5",
@@ -259,7 +259,7 @@
     "/offer-app/media/slick-NKQ64RRA.ttf": "3331eebdd4ba348ef25abe00c39ffbe867d46575",
     "/offer-app/polyfills-BJX5WH5B.js": "72a5a6861724328de149c14045355281bd3c8266",
     "/offer-app/scripts-T5G4RYMF.js": "14f773662cf16f717e634943e4ca7a5bfbed7a2c",
-    "/offer-app/styles-JVFAAH63.css": "c3449306fdf04cd8fe1bab5bfc5b1309560f8503"
+    "/offer-app/styles-WERSIGYX.css": "311a24fe08921c3983574aa0b04892b7696478df"
   },
   "navigationUrls": [
     {
