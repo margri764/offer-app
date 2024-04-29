@@ -1,0 +1,43 @@
+<div class="d-flex flex-column justify-content-center align-items-start animate__animated animate__fadeIn" >
+
+    <div class="d-flex justify-content-center align-items-center" style="background-color: #3370f5;; width: 100vw; height: 80px;">
+        <span  class="font fs-16" style="color: white;"> Aplicá el descuento </span>
+    </div>
+
+    <div class="d-flex flex-column justify-content-center align-items-center mt-5 pd-10r">
+    
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <div class="iconSelected" style="height: 80px; width: 80px;" [ngStyle]="money ? {'opacity':'0.3'}:{}"  (click)="selectTypeDiscount('percent')">
+                <span class="material-symbols-outlined" style="font-size: 60px; margin-left: 10px;">percent</span> &nbsp; &nbsp;
+            </div>    
+            <div class="iconSelected" style="height: 80px; width: 80px;" (click)="selectTypeDiscount('money')">
+                <span class="material-symbols-outlined" style="font-size: 60px; margin-left: 10px;">attach_money</span> &nbsp; &nbsp;
+            </div>    
+        </div>
+        <span  class="font fs-14 mt-3" style="width: 70%; color: gray;"> Elegí un descuento en pesos o en porcentaje (%) </span>
+    </div>
+
+    <div class="d-flex flex-column justify-content-center align-items-center mt-5 w-100 animate__animated animate__fadeIn"  *ngIf="percent || money ">
+
+        <form [formGroup]="myForm" class="d-flex flex-column justify-content-center align-items-center w-100">
+            <mat-form-field>
+                <input matInput type="text" class="font fs-20" style="font-size: 2em; font-family: poppins-light;" formControlName="amount" currencyMask [options]="currencyOptions" >
+                <span matTextSuffix class="font fs-20" *ngIf="percent"> &nbsp;% </span>
+                <span matTextPrefix class="font fs-20" *ngIf="money">$&nbsp;</span>
+            </mat-form-field>
+        </form>
+
+        <div style="width: 90%; margin-top: 40px;">
+            <button type="button" class="btn btn-primary mt-30 font fs-14 w-100" style="height: 60px;" [disabled]="myForm.get('amount')?.value === ''">
+                Continuar
+              </button> 
+          </div>
+
+    </div>
+
+            
+  
+   
+
+
+</div>

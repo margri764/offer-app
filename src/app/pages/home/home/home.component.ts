@@ -52,7 +52,7 @@ export class HomeComponent {
 
 
   slideConfig = {
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     arrows: false, 
     responsive: [
       {

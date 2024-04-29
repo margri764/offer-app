@@ -1,0 +1,79 @@
+
+<div class="d-flex  flex-column justify-content-start align-items-center mt-3 pd-20" >
+
+    <div class="d-flex flex-column justify-content-start align-items-center" >
+        <span class="custom-title"> Selecciona una categoria  </span>
+        <span class="subtitle" style="margin-top: 20px;" > Podrás aplicar un voucher a una o mas categorías.  
+        </span>
+   </div>
+
+   <!-- category´s list -->
+    <div class="d-flex flex-wrap  justify-content-around align-items-start mt-5 w-100" >
+
+        <div class="d-flex flex-column justify-content-center align-items-center" style="width: 80px;" (click)="selectSlide('carniceria')" >
+            <div class="icon" [ngClass]="currentSlideIndex === 'carniceria' ? 'iconSelected': ''">
+                <img src="assets/meats-icon.png" alt="" class="img-fluid" width="65%" style="margin: 0 auto;">
+            </div>
+            <span class="font fs-10">CARNICERIA</span>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center align-items-center " style="width: 80px;" (click)="selectSlide('limpieza')" >
+            <div class="icon" [ngClass]="currentSlideIndex === 'limpieza' ? 'iconSelected': ''">
+                <img src="assets/clean-icon.png" alt="" class="img-fluid" width="65%">
+            </div>
+            <span  class="font fs-10">LIMPIEZA</span>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center align-items-center " style="width: 80px;" (click)="selectSlide('verduleria')">
+            <div class="icon" [ngClass]="currentSlideIndex === 'verduleria' ? 'iconSelected': ''">
+                <img src="assets/vegetables-icon.png" alt="" class="img-fluid" width="60%">
+            </div>
+            <span  class="font fs-10">VERDULERIA</span>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center align-items-center " style="width: 80px;" (click)="selectSlide('mascotas')" >
+            <div class="icon" [ngClass]="currentSlideIndex === 'mascotas' ? 'iconSelected': ''">
+                <img src="assets/pets-icon.png" alt="" class="img-fluid" width="60%">
+            </div>
+            <span  class="font fs-10">MASCOTAS</span>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center align-items-center mt-3 " style="width: 80px;" (click)="selectSlide('bebidas')" >
+            <div class="icon" [ngClass]="currentSlideIndex === 'bebidas' ? 'iconSelected': ''">
+                <img src="assets/drink-icon.png" alt="" class="img-fluid" width="60%">
+            </div>
+            <span  class="font fs-10">BEBIDAS</span>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center align-items-center mt-3"  style="width: 80px;"(click)="selectSlide('despensa')">
+            <div class="icon" [ngClass]="currentSlideIndex === 'despensa' ? 'iconSelected': ''">
+                <img src="assets/stores-icon.png" alt="" class="img-fluid" width="60%">
+            </div>
+            <span  class="font fs-10">DESPENSA</span>
+        </div>
+
+        <div style="width: 80px;"> </div>
+        <div style="width: 80px;"> </div>
+
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-start align-items-center rectangule mt-30 w-99 cursor" style="border-left: 4px solid green; background-color: white;" *ngIf="selectedCategories.length > 0">
+        
+        <span class="d-block w-100 font" style="font-size: 1.2em; font-weight: bold;"> Categorías seleccionadas </span> 
+
+        <mat-chip *ngFor="let cat of selectedCategories" [removable]="true" (removed)="removeCategory(cat)" class="mt-30 mr-5 font" >
+            <label for="" style="font-size: 0.8em; font-family: poppins-light;"> {{ cat | uppercase}} </label>
+            <mat-icon matChipRemove style="color: white;     
+            " >cancel</mat-icon>
+        </mat-chip>
+    
+    </div> 
+
+         
+    <button type="button" class="btn btn-primary mt-30 font fs-14 w-99 mt-30" [disabled]="!selectedCategories || selectedCategories.length === 0" (click)="setDiscount()">
+        Creá el voucher
+    </button> 
+  
+
+
+</div>

@@ -41,6 +41,7 @@ export class AdminProfileComponent implements OnInit  {
       address:     [ 'Av. Mullally 1820', [Validators.required ]],
       city:     [ 'Realicó', [Validators.required ]],
       phone:     [ '2302690139', [Validators.required ]],
+      email:     [ 'celina@gmail.com', [Validators.required ]],
    
     });
   }

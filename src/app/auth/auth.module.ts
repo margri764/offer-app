@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthRoutingModule } from './auth-routing.module';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 
@@ -8,7 +9,9 @@ import { AuthRoutingModule } from './auth-routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    SlickCarouselModule,
+
   ],
   exports: [AuthRoutingModule]
 })

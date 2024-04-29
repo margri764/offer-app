@@ -59,42 +59,52 @@
                 </mat-form-field> 
                 <mat-error *ngIf="validField ('phone')" class="font fs-10">Campo requerido</mat-error> 
 
-                <button type="button"  class="fs-11 mt-10 mb-20 saveBtn"> Guardar </button>
+                <mat-form-field appearance="outline" class="mt-10 font fs-10 w-100">		
+                    <mat-label>Correo electrónico</mat-label>
+                    <input matInput type="text" required formControlName="email" >
+                    </mat-form-field> 
+                    <mat-error *ngIf="validField ('email')" class="font fs-10">Campo requerido</mat-error> 
+
+                <button type="button" class="fs-11 mt-10 mb-20 saveBtn"> Guardar </button>
         </form>
 
     </div>    
 
 
-    <div class="d-flex justify-content-around align-items-center mt-20 rectangule w-97" style="padding: 20px;" >
+    <div class="d-flex flex-column justify-content-around align-items-center mt-20 mb-30 rectangule w-97" style="padding: 20px;" >
+  
+        <div class="d-flex  justify-content-around align-items-center w-100"  >
 
-        <a target="_blank" (click)="openDialog()"> 
-            <i class="fab fa-whatsapp" ></i>
-        </a>
+            <a target="_blank" (click)="openDialog()"> 
+                <i class="fab fa-whatsapp" ></i>
+            </a>
 
-        <a target="_blank" title="Instagram" href="https://www.instagram.com/re.vi.mack_agro/?hl=es">
-            <i class="fab fa-instagram ml-15"></i>
-        </a>
+            <a target="_blank" title="Instagram" href="https://www.instagram.com/re.vi.mack_agro/?hl=es">
+                <i class="fab fa-instagram ml-15"></i>
+            </a>
 
-        <a target="_blank" title="Facebook" href="https://www.facebook.com/search/top?q=revimack%20agro">
-            <i class="fab fa-facebook-f ml-15"></i>
-        </a>
+            <a target="_blank" title="Facebook" href="https://www.facebook.com/search/top?q=revimack%20agro">
+                <i class="fab fa-facebook-f ml-15"></i>
+            </a>
 
-        <a target="_blank" title="email" href="mailto:revimackventas@gmail.com">
-        <i class="fa fa-envelope ml-15"></i>
-        </a>
+            <a target="_blank" title="email" href="mailto:revimackventas@gmail.com">
+            <i class="fa fa-envelope ml-15"></i>
+            </a>
 
-        <a target="_blank" title="gps" href="https://goo.gl/maps/4indGx9FR3M1qX5b6">
-        <i class="fas fa-map-marker-alt ml-15"></i>
-        </a>
+            <a target="_blank" title="gps" href="https://goo.gl/maps/4indGx9FR3M1qX5b6">
+            <i class="fas fa-map-marker-alt ml-15"></i>
+            </a>
 
-        <button mat-fab class="ml-15"  style="width: 35px; height: 35px; background-color: #3370f5;" aria-label="Example icon button with a delete icon" routerLink="/auth/mi-tienda/mis-publicaciones" >
-            <mat-icon>add</mat-icon>
-        </button>
+            <button mat-fab class="ml-15"  style="width: 35px; height: 35px; background-color: #3370f5;" aria-label="Example icon button with a delete icon" routerLink="/auth/mi-tienda/mis-publicaciones" >
+                <mat-icon>add</mat-icon>
+            </button>
+        </div>    
+
+        <div class="d-flex justify-content-start align-items-center w-100 mt-20 ">
+            <span class="font fs-10 ">*Editá tus medios de comunicación </span> 
+        </div>
     </div>
 
-    <div class="d-flex justify-content-start align-items-center w-100 mt-10 mb-30">
-        <span class="font fs-10 ">*Editá tus medios de comunicación </span> 
-    </div>
 
 
 

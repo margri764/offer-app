@@ -9,6 +9,7 @@ import { PublicationHomeComponent } from './pages/publication-home/publication-h
 import { ActivePublicationComponent } from './pages/active-publication/active-publication/active-publication.component';
 import { AdminProfileComponent } from './pages/admin-profile/admin-profile/admin-profile.component';
 import { AdminVouchersComponent } from './pages/admin-vouchers/admin-vouchers/admin-vouchers.component';
+import { SetDiscountComponent } from './pages/set-discount/set-discount/set-discount.component';
 
 const routes: Routes = [
         { path: 'login',  component: LoginComponent, data:{ title:"login"}},
@@ -22,6 +23,7 @@ const routes: Routes = [
               { path: 'publicaciones-activas',  component: ActivePublicationComponent, data:{ title:"active-publications"}},
               { path: 'mi-perfil',  component: AdminProfileComponent, data:{ title:"admin-profile"}},
               { path: 'vouchers',  component: AdminVouchersComponent, data:{ title:"admin-vouchers"}},
+              { path: 'set-descuento',  component: SetDiscountComponent, data:{ title:"set-discount"}},
             
           ]
       },
