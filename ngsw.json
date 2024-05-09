@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1715051850114,
+  "timestamp": 1715276506015,
   "index": "/offer-app/index.html",
   "assetGroups": [
     {
@@ -18,11 +18,11 @@
         "/offer-app/chunk-WKP7FYVO.js",
         "/offer-app/favicon.ico",
         "/offer-app/index.html",
-        "/offer-app/main-EAL4UR3Z.js",
+        "/offer-app/main-NQEKSHH6.js",
         "/offer-app/manifest.webmanifest",
         "/offer-app/polyfills-BJX5WH5B.js",
         "/offer-app/scripts-T5G4RYMF.js",
-        "/offer-app/styles-JPTCWOIC.css"
+        "/offer-app/styles-WBB7IF7X.css"
       ],
       "patterns": []
     },
@@ -242,8 +242,8 @@
     "/offer-app/chunk-VI72U2M4.js": "ba8f83f1505d1825ab1ee816567ef1c591f665d3",
     "/offer-app/chunk-WKP7FYVO.js": "476738815ab3a36bc3558bb44d91531758b911db",
     "/offer-app/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/offer-app/index.html": "83d7737ef6614845e5f39f5c0262db0ebc1a3baf",
-    "/offer-app/main-EAL4UR3Z.js": "869c74a8d58cc98807c1a28ab559711396dc70cc",
+    "/offer-app/index.html": "f5baf3a1c57e620988fcedd5ab388c8ce412b378",
+    "/offer-app/main-NQEKSHH6.js": "6e5741806967bf357687eb4c16395ad2623faf61",
     "/offer-app/manifest.webmanifest": "6367d462909905289a51dfa70e8fff801ac245fd",
     "/offer-app/media/BebasNeue-Regular-7DGWW7LF.ttf": "8b3aaeb978f3cb5f575860774b50c332338563c1",
     "/offer-app/media/LibreBaskerville-Bold-FPHSRN73.ttf": "f8081cbeceb2e69fdffca2348b2c9e0933cd52b5",
@@ -259,7 +259,7 @@
     "/offer-app/media/slick-NKQ64RRA.ttf": "3331eebdd4ba348ef25abe00c39ffbe867d46575",
     "/offer-app/polyfills-BJX5WH5B.js": "72a5a6861724328de149c14045355281bd3c8266",
     "/offer-app/scripts-T5G4RYMF.js": "14f773662cf16f717e634943e4ca7a5bfbed7a2c",
-    "/offer-app/styles-JPTCWOIC.css": "73641bd1c88b3373c7b6e4912b90ed11ab076013"
+    "/offer-app/styles-WBB7IF7X.css": "2e5a4ce086b17d6f1f1a0540a3a8db4645b990e0"
   },
   "navigationUrls": [
     {
